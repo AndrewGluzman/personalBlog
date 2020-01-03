@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+
+
+<form name="noteCompose" action="/compose" method="POST">
+    <div class="form-group">
+        <h1>Compose</h1>
+        <label for="title">Title:</label>
+        <input class="form-control" name="inputMessege" type="text">
+
+
+        <label for="post">Post:</label>
+        <textarea name="postText" class="form-control" rows="5" id="comment"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">PUBLISH</button>
+</form>
+
+<%- include('partials/footer'); -%>
